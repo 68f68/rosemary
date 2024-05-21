@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع الحديقة المصغرة للتنمية المستدامة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="toolbar">
+        <img src="images/logo3.png" alt="Logo" class="logo">
+        <h1 class="project-name">مشروع الحديقة المصغرة للتنمية المستدامة</h1>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="#" onclick="showInfo('groupMembers')">أعضاء الفريق</a></li>
+                <li><a href="#" onclick="showInfo('projectOverview')">نظرة عامة عن المشروع</a></li>
+                <li><a href="https://drive.google.com/file/d/1aOj5GQLtRMq_0uG_vbyfnTW83F_JF6WP/view?usp=sharing" target="_blank">البحث</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="carousel-container">
+        <img src="images/rosemary1.jpg" class="carousel-slide active" alt="Plant 1">
+        <img src="images/rosemary2.jpg" class="carousel-slide" alt="Plant 2">
+        <img src="images/rosemary3.jpg" class="carousel-slide" alt="Plant 3">
+    </div>
+
+    <div class="button-container">
+        <button onclick="showInfo('overview')">نظرة عامة</button>
+        <button onclick="showInfo('origin')">الأصل</button>
+        <button onclick="showInfo('care')">إرشادات العناية</button>
+        <button onclick="showInfo('funFact')">معلومة ممتعة</button>
+    </div>
+
+    <div id="overview" class="info">
+        <h3>نظرة عامة</h3>
+        <p>.إكليل الجبل هو عشبة دائمة الخضرة مع أوراق تشبه الإبر. يستخدم بشكل شائع في الطهي، خاصة في المطبخ المتوسطي، وله نكهة ورائحة قوية.</p>
+    </div>
+    <div id="origin" class="info">
+        <h3>الأصل</h3>
+        <p>إكليل الجبل موطنه منطقة البحر الأبيض المتوسط. يزدهر في مناخ دافئ ومشمس وتربة جيدة التصريف</p>
+    </div>
+    <div id="care" class="info">
+        <h3>إرشادات العناية</h3>
+        <p>
+        
+            <strong>كيفية الزراعة:</strong>يتطلب إكليل الجبل ضوء الشمس الكامل وتربة جيدة التصريف. يتحمل الجفاف بمجرد أن يتأسس ولا يجب سقيه بشكل مفرط.   
+            <br><br>
+            <strong>مدة النمو:</strong> يستغرق إكليل الجبل حوالي 14-21 يومًا للإنبات، ولكنه قد يستغرق عدة أشهر ليصبح جاهزًا للحصاد، غالبًا بعد 6-12 شهرًا من الزراعة 
+        </p>
+    </div>
+    <div id="funFact" class="info">
+        <h3>معلومة ممتعة</h3>
+        <p>تم استخدام إكليل الجبل منذ العصور القديمة في الطقوس وكرمز للتذكر. كما يعرف بقدرته على تحسين الذاكرة.</p>
+    </div>
+
+    <div id="groupMembers" class="info">
+        <h3>أعضاء الفريق</h3>
+        <ul>
+            <li> فريدة مدكور</li>
+            <li> ريم حاتم</li>
+            <li>هاجر جاد </li>
+            <li> دعاء محمد</li>
+            <li>ساره شاكر</li>
+            <li>ساره سعد</li>
+            <li>سما فراج</li>
+        </ul>
+    </div>
+    <div id="projectOverview" class="info">
+        <h3>نظرة عامة عن المشروع</h3>
+        <p>الهدف الرئيسي من هذا المشروع هو إنشاء حديقة مصغرة مستدامة وتعليمية تعزز الوعي البيئي وممارسات العيش المستدامة بين الطلاب والمجتمع. ستعمل هذه الحديقة كمنصة تعليمية عملية لفهم بيولوجيا النباتات، وتقنيات البستنة المستدامة، وأهمية التوازن البيئي.</p>
+        <p>مشروع الحديقة المصغرة للتنمية المستدامة هو مبادرة شاملة تجمع بين البستنة العملية والابتكار الرقمي لتعزيز الاستدامة والتعليم البيئي. من خلال دمج التكنولوجيا والتعلم العملي، يهدف المشروع إلى إلهام جيل جديد من الأفراد الواعيين بيئيًا.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
